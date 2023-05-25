@@ -1,0 +1,26 @@
+<div>
+  <ion-card [style.background-color]="item.color" >
+    
+    <ion-card-header>
+  
+      <ion-card-title >{{item.name}}</ion-card-title>
+  
+      <div class="remove-container">
+        <ion-button fill="clear" (click)="presentActionSheet()"> 
+          <ion-icon name="close" size="medium"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-header>
+  
+    <ion-card-content (click)="onClick()">
+      <div>
+        {{item.desc}}
+      </div>
+      <div class="date-container">
+        May 15 11.36 AM
+      </div>
+    </ion-card-content>
+    <!-- <ion-ripple-effect type="unbounded"></ion-ripple-effect> -->
+  </ion-card>
+  
+</div>

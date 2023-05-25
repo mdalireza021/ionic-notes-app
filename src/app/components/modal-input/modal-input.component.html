@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" (click)="cancel()">
+        <ion-icon name="chevron-back"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <!-- <ion-title>Welcome</ion-title> -->
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">
+        <ion-icon name="create"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="desc">
+    <ion-input labelPlacement="" label="" [(ngModel)]="title" placeholder="Title"></ion-input>
+
+  </div>
+  <div>
+    <ion-textarea label="" [autoGrow]="true" placeholder="Type something..."></ion-textarea>
+  </div>
+
+
+</ion-content>
