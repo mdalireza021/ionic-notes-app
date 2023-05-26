@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Khand&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .card-container {}
 
@@ -18,12 +17,13 @@ ion-icon {
 }
 ion-card {
 
+    
     border: 1px solid #25252596;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4), -5px 0px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     margin: 5px;
     --color: #000000;
-    font-family: 'khad';
+    
 
 }
 
@@ -33,15 +33,15 @@ ion-button {
 }
 
 ion-card-title {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 18px;
 }
 
 .card-desc {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

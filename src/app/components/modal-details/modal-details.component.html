@@ -1,3 +1,37 @@
-<p>
-  modal-details works!
-</p>
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="#FFFFFF" (click)="cancel()">
+        <ion-icon size="large" name="chevron-back"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Notes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true" id="hover-trigger">
+
+        <ion-icon size="large" name="save"></ion-icon>
+
+      </ion-button>
+
+      <ion-popover trigger="hover-trigger" triggerAction="hover">
+        <ng-template>
+          <ion-content class="ion-padding">Hello World!</ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="desc">
+    <ion-input labelPlacement="" label="" [(ngModel)]="noteTitle" placeholder="Title"></ion-input>
+
+  </div>
+  <div>
+    <ion-textarea label="" [autoGrow]="true" placeholder="Type something..."></ion-textarea>
+  </div>
+
+
+</ion-content>
